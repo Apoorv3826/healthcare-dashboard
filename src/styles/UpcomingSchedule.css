@@ -1,0 +1,71 @@
+.upcoming-schedule-container {
+  margin-top: 12px;
+  padding: 20px;
+  background-color: #f5f3ff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 570px;
+}
+
+.upcoming-schedule-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+}
+
+.upcoming-day-group {
+  margin-bottom: 20px;
+}
+
+.upcoming-day-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.upcoming-appointment-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.upcoming-appointment-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  background-color: #e0e7ff;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.upcoming-appointment-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 17px;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.upcoming-appointment-title .title-text {
+  margin-right: 36px;
+  flex-shrink: 0;
+}
+
+.upcoming-appointment-time {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.appointment-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}

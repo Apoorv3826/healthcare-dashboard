@@ -1,0 +1,86 @@
+.activity-box {
+  max-width: 610px;
+  margin-top: 2px;
+  background-color: #f5f3ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.activity-header h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.appointment-note {
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.chart-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 120px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.bar {
+  width: 6px;
+  border-radius: 4px;
+}
+
+.full-grey {
+  height: 50px;
+  background-color: #e2e8f0;
+}
+
+.aqua-only {
+  height: 45px;
+  background-color: #67e8f9;
+}
+
+.dark-only {
+  height: 45px;
+  background-color: #1e3a8a;
+}
+
+.aqua-part {
+  height: 22px;
+  background-color: #67e8f9;
+}
+
+.dark-part {
+  height: 22px;
+  background-color: #1e3a8a;
+}
+
+.day-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(137, 160, 187);
+}

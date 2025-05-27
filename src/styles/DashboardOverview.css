@@ -1,0 +1,139 @@
+.main {
+  padding: 40px;
+}
+
+.inside {
+  max-width: 620px;
+}
+
+.big {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1e3a8a;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.with-icon {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  gap: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.body-pic {
+  position: relative;
+  width: 240px;
+  background: #f5f3ff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.tag {
+  position: absolute;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 6px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.one {
+  top: 65px;
+  right: -25px;
+}
+
+.two {
+  bottom: 130px;
+  left: -18px;
+  background-color: rgb(44, 202, 213);
+  color: #1e3a8a;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  width: 220px;
+  background: #f5f3ff;
+  color: #1e3a8a;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 6px;
+}
+
+.bar-health {
+  height: 6px;
+  border-radius: 3px;
+}
+
+.red {
+  background-color: #8b0000;
+  width: 65%;
+}
+
+.green {
+  background-color: #22c55e;
+  width: 60%;
+}
+
+.orange {
+  background-color: #f97316;
+  width: 60%;
+}
+
+.link-detail {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 20px;
+  color: #1e3a8a;
+}

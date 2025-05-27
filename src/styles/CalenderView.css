@@ -1,0 +1,156 @@
+.calendar-container {
+  background-color: #f5f3ff;
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 570px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.nav-buttons svg {
+  color: #475569;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.time-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 38px;
+  font-size: 12px;
+  color: #475569;
+  min-width: 50px;
+}
+
+.time-row {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.day-header {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.day-name {
+  font-weight: 500;
+  color: #1e293b;
+  padding-bottom: 15px;
+}
+
+.day-date {
+  font-size: 18px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.time-slot {
+  width: 45px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #1e293b;
+  background-color: transparent;
+}
+
+.slot {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.highlight-slot {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.no-slot {
+  color: #74787d;
+  font-size: medium;
+  font-weight: 900;
+}
+
+.appointment-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.appointment-card {
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.appointment-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.appointment-time {
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.blue-card {
+  flex: 1;
+  background-color: #312e81;
+  color: white;
+}
+
+.blue-card .appointment-title,
+.blue-card .appointment-time {
+  color: white;
+}
+
+.light-card {
+  flex: 2;
+  background-color: #e0e7ff;
+}
+
+.light-card .appointment-title {
+  color: #1e3a8a;
+}
+
+.light-card .appointment-time {
+  color: #475569;
+}
