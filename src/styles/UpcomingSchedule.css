@@ -69,3 +69,18 @@
   height: 18px;
   object-fit: contain;
 }
+
+@media (max-width: 768px) {
+  .calendar,
+  .activity,
+  .schedule {
+    padding: 12px;
+    overflow-x: auto;
+  }
+
+  .calendar-table,
+  .activity-log,
+  .schedule-list {
+    min-width: 600px;
+  }
+}

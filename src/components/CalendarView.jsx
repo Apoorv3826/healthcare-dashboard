@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/CalenderView.css";
+import "../styles/CalendarView.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const calendarData = [
@@ -37,6 +37,8 @@ const calendarData = [
   },
 ];
 
+const displayTimes = ["10:00", "11:00", "12:00"];
+
 const CalendarView = () => {
   return (
     <div className="calendar-container">
@@ -49,14 +51,13 @@ const CalendarView = () => {
       </div>
 
       <div className="calendar-grid">
-        {/* Calendar Columns */}
         {calendarData.map(({ day, date, slots, highlight }) => (
           <div key={date} className="day-column">
             <div className="day-header">
               <div className="day-name">{day}</div>
               <div className="day-date">{date}</div>
             </div>
-            {["10:00", "11:00", "12:00"].map((time) => {
+            {displayTimes.map((time) => {
               if (slots.includes(time)) {
                 const isHighlighted = time === highlight;
                 return (
@@ -81,7 +82,6 @@ const CalendarView = () => {
         ))}
       </div>
 
-      {/* Appointment Cards */}
       <div className="appointment-row">
         <div className="appointment-card blue-card">
           <div className="appointment-title">Dentist</div>

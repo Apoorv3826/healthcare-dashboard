@@ -56,3 +56,24 @@
   flex-direction: column;
   gap: 2px;
 }
+
+@media (max-width: 768px) {
+  .side {
+    position: sticky;
+    top: 0;
+    background: var(--background-secondary);
+    z-index: 10;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 12px;
+  }
+
+  .link-sidebar {
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+
+  .title {
+    display: none;
+  }
+}

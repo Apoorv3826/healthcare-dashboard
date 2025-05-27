@@ -4,7 +4,8 @@
   border-radius: 12px;
   margin-top: 30px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  max-width: 570px;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .calendar-header {
@@ -27,25 +28,10 @@
 
 .calendar-grid {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
-}
-
-.time-labels {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  padding-top: 38px;
-  font-size: 12px;
-  color: #475569;
-  min-width: 50px;
-}
-
-.time-row {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 12px;
 }
 
 .day-column {
@@ -54,6 +40,7 @@
   gap: 10px;
   align-items: center;
   font-size: 14px;
+  min-width: 60px;
 }
 
 .day-header {
@@ -64,13 +51,20 @@
 .day-name {
   font-weight: 500;
   color: #1e293b;
-  padding-bottom: 15px;
+  padding-bottom: 6px;
 }
 
 .day-date {
   font-size: 18px;
   font-weight: 700;
   color: #475569;
+}
+
+.active-date {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
 }
 
 .time-slot {
@@ -93,6 +87,7 @@
 .highlight-slot {
   background-color: #1e3a8a;
   color: white;
+  font-weight: 600;
 }
 
 .no-slot {
@@ -103,6 +98,7 @@
 
 .appointment-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
 }
@@ -114,6 +110,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 4px;
+  min-width: 240px;
+  flex: 1;
 }
 
 .appointment-title {
@@ -132,7 +130,6 @@
 }
 
 .blue-card {
-  flex: 1;
   background-color: #312e81;
   color: white;
 }
@@ -143,7 +140,6 @@
 }
 
 .light-card {
-  flex: 2;
   background-color: #e0e7ff;
 }
 
@@ -153,4 +149,28 @@
 
 .light-card .appointment-time {
   color: #475569;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 16px;
+  }
+
+  .calendar-grid {
+    flex-wrap: nowrap;
+  }
+
+  .appointment-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-card {
+    min-width: 100%;
+  }
+
+  .day-column {
+    min-width: 50px;
+  }
 }

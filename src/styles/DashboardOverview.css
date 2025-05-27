@@ -3,7 +3,7 @@
 }
 
 .inside {
-  max-width: 620px;
+  max-width: 100%;
 }
 
 .big {
@@ -17,6 +17,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .small {
@@ -34,8 +36,8 @@
 
 .row {
   display: flex;
-  gap: 45px;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .body-pic {
@@ -44,6 +46,7 @@
   background: #f5f3ff;
   border-radius: 8px;
   padding: 12px;
+  flex-shrink: 0;
 }
 
 .img {
@@ -59,6 +62,7 @@
   font-size: 15px;
   font-weight: 500;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .one {
@@ -77,14 +81,17 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .card {
-  width: 220px;
   background: #f5f3ff;
   color: #1e3a8a;
   padding: 14px;
   border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .top {
@@ -113,21 +120,27 @@
 .bar-health {
   height: 6px;
   border-radius: 3px;
+  width: 100%;
+  background-color: #e5e7eb;
+  overflow: hidden;
 }
 
 .red {
   background-color: #8b0000;
   width: 65%;
+  height: 100%;
 }
 
 .green {
   background-color: #22c55e;
   width: 60%;
+  height: 100%;
 }
 
 .orange {
   background-color: #f97316;
   width: 60%;
+  height: 100%;
 }
 
 .link-detail {
@@ -136,4 +149,43 @@
   text-align: right;
   margin-top: 20px;
   color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .body-pic {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .card {
+    flex: 1 1 48%;
+    min-width: 160px;
+  }
+
+  .tag.one {
+    top: 20px;
+    right: 10px;
+  }
+
+  .tag.two {
+    bottom: 30px;
+    left: 10px;
+  }
+
+  .link-detail {
+    text-align: left;
+  }
 }

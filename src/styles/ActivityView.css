@@ -1,23 +1,18 @@
 .activity-box {
-  max-width: 610px;
-  margin-top: 2px;
-  background-color: #f5f3ff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .activity-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2px;
-}
-
-.activity-header h3 {
-  font-size: 19px;
-  font-weight: 700;
+  background-color: #f5f3ff;
+  padding: 10px 22px;
+  border-radius: 10px 10px 0 0;
   color: #1e3a8a;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .appointment-note {
@@ -29,24 +24,25 @@
 .chart-area {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  min-height: 120px;
+  background-color: #f5f3ff;
+  padding: 24px;
+  border-radius: 0 0 10px 10px;
+  height: 220px; /* Increased height */
 }
 
 .day-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 6px;
 }
 
-.bar-stack {
+.bar-group {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 6px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 6px;
 }
 
 .bar {
@@ -55,32 +51,49 @@
 }
 
 .full-grey {
-  height: 50px;
+  height: 78px;
   background-color: #e2e8f0;
 }
 
 .aqua-only {
-  height: 45px;
+  height: 50px;
   background-color: #67e8f9;
 }
 
 .dark-only {
-  height: 45px;
+  height: 50px;
   background-color: #1e3a8a;
 }
 
 .aqua-part {
   height: 22px;
   background-color: #67e8f9;
+  margin-bottom: 2px;
 }
 
 .dark-part {
-  height: 22px;
+  height: 24px;
   background-color: #1e3a8a;
 }
 
 .day-label {
   font-size: 14px;
   font-weight: 500;
-  color: rgb(137, 160, 187);
+  color: #64748b;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .activity-box {
+    padding: 0 20px;
+  }
+
+  .chart-area {
+    overflow-x: auto;
+    height: auto;
+  }
+
+  .day-column {
+    min-width: 50px;
+  }
 }
