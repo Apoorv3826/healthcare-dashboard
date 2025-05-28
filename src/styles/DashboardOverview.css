@@ -151,28 +151,119 @@
   color: #1e3a8a;
 }
 
+@media (max-width: 1024px) {
+  .main {
+    padding: 30px;
+  }
+
+  .body-pic {
+    width: 200px;
+  }
+
+  .tag.one {
+    top: 50px;
+    right: -20px;
+  }
+
+  .tag.two {
+    bottom: 100px;
+    left: -15px;
+  }
+}
+
 @media (max-width: 768px) {
   .main {
     padding: 20px;
   }
 
+  .big {
+    font-size: 22px;
+  }
+
   .row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .body-pic {
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
   }
 
   .card {
-    flex: 1 1 48%;
-    min-width: 160px;
+    flex: 1 1 calc(50% - 6px);
+    min-width: 150px;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .tag.one {
+    top: 30px;
+    right: 15px;
+  }
+
+  .tag.two {
+    bottom: 60px;
+    left: 15px;
+  }
+
+  .link-detail {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 15px;
+  }
+
+  .big {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .small {
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    flex: none;
+    min-width: 100%;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 3px 6px;
   }
 
   .tag.one {
@@ -181,11 +272,21 @@
   }
 
   .tag.two {
-    bottom: 30px;
+    bottom: 40px;
     left: 10px;
   }
+}
 
-  .link-detail {
-    text-align: left;
+@media (max-width: 360px) {
+  .main {
+    padding: 12px;
+  }
+
+  .big {
+    font-size: 18px;
+  }
+
+  .body-pic {
+    max-width: 250px;
   }
 }

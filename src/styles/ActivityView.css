@@ -27,7 +27,7 @@
   background-color: #f5f3ff;
   padding: 24px;
   border-radius: 0 0 10px 10px;
-  height: 220px; /* Increased height */
+  height: 220px;
 }
 
 .day-column {
@@ -83,17 +83,122 @@
   margin-top: 6px;
 }
 
+@media (max-width: 1024px) {
+  .activity-box {
+    padding: 0 30px;
+  }
+
+  .chart-area {
+    padding: 20px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .activity-box {
     padding: 0 20px;
   }
 
+  .activity-header {
+    padding: 8px 18px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .appointment-note {
+    font-size: 13px;
+  }
+
   .chart-area {
+    padding: 18px;
+    height: 180px;
     overflow-x: auto;
-    height: auto;
   }
 
   .day-column {
-    min-width: 50px;
+    min-width: 45px;
+    gap: 4px;
+  }
+
+  .day-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-box {
+    padding: 0 15px;
+  }
+
+  .activity-header {
+    padding: 6px 15px;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .appointment-note {
+    font-size: 12px;
+  }
+
+  .chart-area {
+    padding: 15px;
+    height: 160px;
+    gap: 8px;
+  }
+
+  .day-column {
+    min-width: 40px;
+    gap: 3px;
+  }
+
+  .bar-group {
+    gap: 4px;
+  }
+
+  .bar {
+    width: 5px;
+  }
+
+  .full-grey {
+    height: 60px;
+  }
+
+  .aqua-only,
+  .dark-only {
+    height: 40px;
+  }
+
+  .aqua-part {
+    height: 18px;
+  }
+
+  .dark-part {
+    height: 20px;
+  }
+
+  .day-label {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .activity-box {
+    padding: 0 10px;
+  }
+
+  .chart-area {
+    padding: 12px;
+    height: 140px;
+  }
+
+  .day-column {
+    min-width: 35px;
+  }
+
+  .bar {
+    width: 4px;
   }
 }

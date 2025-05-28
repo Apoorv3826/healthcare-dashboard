@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/ActivityView.css";
 
-// Bar types: none, aqua, dark, combo
 const getBarType = () => {
   const types = ["none", "aqua", "dark", "combo"];
   return types[Math.floor(Math.random() * types.length)];

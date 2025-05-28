@@ -70,17 +70,122 @@
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .calendar,
-  .activity,
-  .schedule {
-    padding: 12px;
-    overflow-x: auto;
+@media (max-width: 1024px) {
+  .upcoming-schedule-container {
+    max-width: 100%;
+    padding: 18px;
   }
 
-  .calendar-table,
-  .activity-log,
-  .schedule-list {
-    min-width: 600px;
+  .upcoming-appointment-row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-schedule-container {
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+  .upcoming-schedule-header {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .upcoming-day-group {
+    margin-bottom: 16px;
+  }
+
+  .upcoming-day-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .upcoming-appointment-row {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .upcoming-appointment-card {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .upcoming-appointment-title {
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  .upcoming-appointment-title .title-text {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upcoming-schedule-container {
+    padding: 14px;
+    margin-top: 8px;
+  }
+
+  .upcoming-schedule-header {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .upcoming-day-group {
+    margin-bottom: 14px;
+  }
+
+  .upcoming-day-label {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .upcoming-appointment-row {
+    gap: 12px;
+  }
+
+  .upcoming-appointment-card {
+    padding: 10px 12px;
+  }
+
+  .upcoming-appointment-title {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .upcoming-appointment-title .title-text {
+    margin-right: 0;
+  }
+
+  .upcoming-appointment-time {
+    font-size: 12px;
+  }
+
+  .appointment-icon {
+    width: 16px;
+    height: 16px;
+    align-self: flex-end;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .upcoming-schedule-container {
+    padding: 12px;
+  }
+
+  .upcoming-appointment-card {
+    padding: 8px 10px;
+  }
+
+  .upcoming-appointment-title {
+    font-size: 13px;
+  }
+
+  .upcoming-appointment-time {
+    font-size: 11px;
   }
 }
